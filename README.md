@@ -38,7 +38,7 @@ Riffloom 把素材采集、内容拆解、创作、封面设计和对话式工�
 
 ## 快速开始
 
-要求：Python 3.11+、Node.js 20+、npm。
+要求：Python 3.11+、Node.js 22.22.2+、npm。
 
 ```bash
 git clone https://github.com/betterjally-oss/riffloom.git

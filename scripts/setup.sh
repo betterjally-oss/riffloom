@@ -9,7 +9,7 @@ command -v "$python_bin" >/dev/null 2>&1 || {
   exit 1
 }
 command -v npm >/dev/null 2>&1 || {
-  echo "找不到 npm。请安装 Node.js 20+。" >&2
+  echo "找不到 npm。请安装 Node.js 22.22.2+。" >&2
   exit 1
 }
 

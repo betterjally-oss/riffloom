@@ -3,7 +3,7 @@
 ## 环境要求
 
 - Python 3.11 或更高版本
-- Node.js 20 或更高版本
+- Node.js 22.22.2 或更高版本
 - npm
 - macOS 或 Linux；Windows 建议使用 WSL 2
 
