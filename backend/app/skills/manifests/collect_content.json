@@ -1,0 +1,13 @@
+{
+  "id": "collect_content",
+  "name": "采集内容",
+  "version": "1.0.0",
+  "modes": ["agent", "collection"],
+  "default_mode": "collection",
+  "input_schema": {"kind": "collection kind", "query": "object"},
+  "output_contract": "CollectionTask",
+  "tools": ["create_collection_task", "get_task_status"],
+  "max_steps": 2,
+  "roles": ["editor", "lead", "admin"],
+  "fallback": "数据源失败时返回结构化错误，不由模型补造"
+}

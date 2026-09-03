@@ -1,0 +1,13 @@
+{
+  "id": "original_copy",
+  "name": "文案原创",
+  "version": "1.0.0",
+  "modes": ["agent", "creation"],
+  "default_mode": "creation",
+  "input_schema": {"prompt": "string", "knowledge_refs": "record[]"},
+  "output_contract": "CreationOutputV1",
+  "tools": ["search_library", "save_creation_version"],
+  "max_steps": 3,
+  "roles": ["editor", "lead", "admin"],
+  "fallback": "无知识命中时允许通用能力，但外部事实标记为观点或待核实"
+}

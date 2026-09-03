@@ -1,0 +1,13 @@
+{
+  "id": "riffloom_agent",
+  "name": "Riffloom 智能体",
+  "version": "2.0.0",
+  "modes": ["agent"],
+  "default_mode": "agent",
+  "input_schema": {"prompt": "string", "conversation_history": "message[]"},
+  "output_contract": "AgentChatOutputV2",
+  "tools": ["create_breakdown_task", "create_original_task", "create_rewrite_task", "create_trend_task", "create_collect_rewrite_task", "request_collection_confirmation"],
+  "max_steps": 1,
+  "roles": ["editor", "lead", "admin"],
+  "fallback": "未知、不完整或越权动作降级为解释性回复且不产生副作用"
+}

@@ -1,0 +1,9 @@
+fastapi==0.116.1
+uvicorn==0.35.0
+SQLAlchemy==2.0.43
+alembic==1.16.5
+pydantic==2.13.4
+httpx==0.28.1
+cryptography>=45.0.0,<47.0.0
+openai>=2.0.0,<3.0.0
+tos>=2.9.0,<3.0.0

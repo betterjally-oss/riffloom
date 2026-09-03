@@ -1,0 +1,35 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# JavaScript
+node_modules/
+.npm-cache/
+.next/
+.next-*/
+out/
+coverage/
+playwright-report/
+test-results/
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.tsbuildinfo
+
+# Runtime data
+data/
+uploads/
+*.db
+*.sqlite*
+
+# Tooling and OS files
+.DS_Store
+.vefaas/
+*.log
+npm-debug.log*
+frontend/AGENTS.md
+frontend/CLAUDE.md

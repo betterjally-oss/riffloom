@@ -1,0 +1,13 @@
+{
+  "id": "copy_rewrite",
+  "name": "文案仿写",
+  "version": "1.0.0",
+  "modes": ["agent", "creation"],
+  "default_mode": "creation",
+  "input_schema": {"source_ids": "collection/breakdown[]", "prompt": "string", "knowledge_refs": "record[]"},
+  "output_contract": "CreationOutputV1",
+  "tools": ["get_collection_record", "get_breakdown", "search_library", "check_text_overlap", "save_creation_version"],
+  "max_steps": 4,
+  "roles": ["editor", "lead", "admin"],
+  "fallback": "缺少来源或拆解时拒绝；高重合只提示风险并进入人工审核"
+}

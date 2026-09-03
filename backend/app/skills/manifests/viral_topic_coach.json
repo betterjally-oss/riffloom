@@ -1,0 +1,13 @@
+{
+  "id": "viral_topic_coach",
+  "name": "爆款选题指导",
+  "version": "3.0.0",
+  "modes": ["agent", "trend"],
+  "default_mode": "trend",
+  "input_schema": {"direction": "string", "audience": "string", "keywords": "string[]", "window_days": "integer", "result_count": "integer", "signal_snapshot": "TikHubTrendSnapshotV1"},
+  "output_contract": "TopicGuidanceOutputV3",
+  "tools": ["search_tikhub_trends"],
+  "max_steps": 3,
+  "roles": ["editor", "lead", "admin"],
+  "fallback": "TikHub 未返回可核验时效信号时停止生成并提示重试"
+}

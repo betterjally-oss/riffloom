@@ -1,0 +1,13 @@
+{
+  "id": "collect_breakdown_rewrite",
+  "name": "一键采集仿写",
+  "version": "1.0.0",
+  "modes": ["agent"],
+  "default_mode": "agent",
+  "input_schema": {"prompt": "authorized sandbox URL and request"},
+  "output_contract": "CollectionTask+BreakdownOutputV1+CreationOutputV1",
+  "tools": ["create_collection_task", "get_collection_record", "save_breakdown_version", "search_library", "check_text_overlap", "save_creation_version"],
+  "max_steps": 4,
+  "roles": ["editor", "lead", "admin"],
+  "fallback": "任一步失败只影响当前 attempt，已入库结果和旧版本保留"
+}

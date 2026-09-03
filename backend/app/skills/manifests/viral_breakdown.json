@@ -1,0 +1,13 @@
+{
+  "id": "viral_breakdown",
+  "name": "爆款拆解",
+  "version": "1.0.0",
+  "modes": ["agent", "breakdown"],
+  "default_mode": "breakdown",
+  "input_schema": {"source_ids": "collection[]", "prompt": "string"},
+  "output_contract": "BreakdownOutputV1",
+  "tools": ["get_collection_record", "save_breakdown_version"],
+  "max_steps": 3,
+  "roles": ["editor", "lead", "admin"],
+  "fallback": "无可观察图片时保留视觉限制；结构失败后最多修复一次"
+}
